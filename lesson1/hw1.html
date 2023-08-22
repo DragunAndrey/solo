@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw1</title>
+    <title>домашнее задание #1</title>
 </head>
 <body>
+
+
+
+    <script>
+
+let width =parseInt(prompt(`Какая ширина у прямоугольника?`));
+let length= parseInt(prompt(`Какая длина у прямоугольника?`));
+if (length===width){
+    console.log(`Перед нами квадрат!`);
+}
+let s=width*length;
+let p=(width+length)*2;
+console.log(s);
+console.log(p);
+
+
+
+
+
+let month=parseInt(prompt(`Укажите число от 1 до 12`));
+if(month==12 || month<=2 && month>=1){
+    console.log(`Это зима`);   
+}
+else
+if(month>=3 && month<=5){
+    console.log(`Это весна`);
+}
+else
+if(month>=6 && month<=8){
+    console.log(`Это лето`);
+}
+else
+if(month>=9 && month<=11){
+    console.log(`Это осень`)
+}
+console.log(month);
+
+
+ switch(month){
+    case 1:
+        case 2:
+            case 12:
+               console.log(`Это зима`);
+               break;
+    
+    case 3:
+        case 4:
+            case 5:
+                console.log(`Это весна`);
+                break;
+
+    case 6:
+        case 7:
+            case 8:
+                console.log(`Это лето`);
+                break;
+    case 9:
+        case 10:
+            case 11:
+                console.log(`Это осень`);
+                break            
+ }
+
+
+
+
+let num=Number(prompt(`введите любое число`));
+let even=(num%2===0)?`четное`:`нечетное`;
+let full= Number.isInteger(num)?`целое`:`дробное`; 
+let plusminus= (num>=0)?`Положительное`:`Отрицательное`;
+let finish= (` ${even} \n ${full} \n ${plusminus}`)
+console.log(finish);
+
+
+
+
+
+
+
+
+    </script>
     
 </body>
 </html>
